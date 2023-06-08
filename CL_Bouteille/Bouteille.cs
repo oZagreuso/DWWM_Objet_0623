@@ -17,7 +17,7 @@ namespace CL_Bouteille
         private double contenuNiveauBouteilleEnLitres;
         private string typeNomContenuBouteille;
         private bool estFermee;
-        private bool estVide;
+        //private bool estVide;
 
         //Constructeurs (avec trois constructeurs, polymorphisme de constructeur
 
@@ -31,7 +31,7 @@ namespace CL_Bouteille
             contenuNiveauBouteilleEnLitres = 0.75;
             typeNomContenuBouteille = " soda ";
             estFermee = true;
-            estVide = false;
+            //estVide = false;
         }
 
             //Classique
@@ -44,7 +44,7 @@ namespace CL_Bouteille
             this.contenuNiveauBouteilleEnLitres = _contenuNiveauBouteilleEnLitres;
             this.typeNomContenuBouteille = _typeNomContenuBouteille;
             this.estFermee= _estFermee;
-            this.estVide= _estVide;
+            //this.estVide= _estVide;
         }
 
             //Par clonage
@@ -57,18 +57,35 @@ namespace CL_Bouteille
             this.contenuNiveauBouteilleEnLitres = cloneBouteille.contenuNiveauBouteilleEnLitres;
             this.typeNomContenuBouteille = cloneBouteille.typeNomContenuBouteille;
             this.estFermee = cloneBouteille.estFermee;
-            this.estVide = cloneBouteille.estVide;
+            //this.estVide = cloneBouteille.estVide;
         }
 
 
         //Methodes
 
-        public string GetNomBouteille;
-        public string GetMatiereBouteille;
-        public double GetContenanceBouteilleEnLitres;
-        private double GetContenuBouteilleEnLitres;
+        public string GetNomBouteille()
+        {
+            return this.nomBouteille;
+        }
+
+        public string GetMatiereBouteille()
+        {
+            return this.matiereBouteille;
+        }
+
+        public double GetContenanceBouteilleEnLitres()
+        {
+            return this.contenanceBouteilleEnLitres;
+        }
+        private double GetContenuBouteilleEnLitres()
+        {
+            return 
+        }
         public bool FermerBouteille;
         public bool OuvrirBouteille;
+
+        //remplirTout
+        //viderTout
         public bool RemplirBouteille(double remplirQuantiteEnLitres)
         {
             if (this.estFermee)
