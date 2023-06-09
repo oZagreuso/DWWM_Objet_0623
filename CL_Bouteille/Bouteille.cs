@@ -15,12 +15,10 @@ namespace CL_Bouteille
         private string matiereBouteille;
         private double contenanceBouteilleEnLitres;
         private double contenuBouteilleEnLitres;
-        private string typeNomContenuBouteille;
-        private double quantiteEnLitres;
-        private bool estFermee;
-        //private bool estVide;
+        private string typeNomContenuBouteille;       
+        private bool estFermee;        
 
-        //Constructeurs (avec trois constructeurs, polymorphisme de constructeur
+        //Constructeurs (avec trois constructeurs, polymorphisme de constructeur)
 
         //Par défaut
 
@@ -30,24 +28,22 @@ namespace CL_Bouteille
             matiereBouteille = " Plastique ";
             contenanceBouteilleEnLitres = 1.25;
             contenuBouteilleEnLitres = 0.75;
-            typeNomContenuBouteille = " soda ";
-            quantiteEnLitres = 0.25;
+            typeNomContenuBouteille = " soda ";            
             estFermee = true;
             //estVide = false;
         }
 
         //Classique
 
-        public Bouteille(string _nomBouteille, string _matiereBouteille, double _contenanceBouteilleEnLitres, double _contenuBouteilleEnLitres, string _typeNomContenuBouteille, double _quantiteEnLitres, bool _estFermee, bool _estVide)
+        public Bouteille(string _nomBouteille, string _matiereBouteille, double _contenanceBouteilleEnLitres, double _contenuBouteilleEnLitres, string _typeNomContenuBouteille, bool _estFermee)
         {
             this.nomBouteille = _nomBouteille;
             this.matiereBouteille = _matiereBouteille;
             this.contenanceBouteilleEnLitres = _contenanceBouteilleEnLitres;
             this.contenuBouteilleEnLitres = _contenuBouteilleEnLitres;
-            this.typeNomContenuBouteille = _typeNomContenuBouteille;
-            this.quantiteEnLitres = _quantiteEnLitres;
+            this.typeNomContenuBouteille = _typeNomContenuBouteille;            
             this.estFermee = _estFermee;
-            //this.estVide= _estVide;
+            
         }
 
         //Par clonage
@@ -58,8 +54,7 @@ namespace CL_Bouteille
             this.matiereBouteille = cloneBouteille.matiereBouteille;
             this.contenanceBouteilleEnLitres = cloneBouteille.contenanceBouteilleEnLitres;
             this.contenuBouteilleEnLitres = cloneBouteille.contenuBouteilleEnLitres;
-            this.typeNomContenuBouteille = cloneBouteille.typeNomContenuBouteille;
-            this.quantiteEnLitres = cloneBouteille.quantiteEnLitres;
+            this.typeNomContenuBouteille = cloneBouteille.typeNomContenuBouteille;            
             this.estFermee = cloneBouteille.estFermee;
         }
 
@@ -78,7 +73,7 @@ namespace CL_Bouteille
         {
             return this.contenanceBouteilleEnLitres;
         }
-        private double GetContenuBouteilleEnLitres()
+        public double GetContenuBouteilleEnLitres()
         {
             return this.contenuBouteilleEnLitres;
         }
@@ -137,7 +132,7 @@ namespace CL_Bouteille
             {
                 if (this.contenuBouteilleEnLitres < this.contenanceBouteilleEnLitres)
                 {
-                    this.contenuBouteilleEnLitres = this.contenuBouteilleEnLitres + this.quantiteEnLitres;
+                    this.contenuBouteilleEnLitres = this.contenuBouteilleEnLitres + quantiteEnLitres;
                     return true;
                 }
                 else
@@ -156,7 +151,7 @@ namespace CL_Bouteille
             {
                 if (this.contenuBouteilleEnLitres > 0)
                 {
-                    this.contenuBouteilleEnLitres = this.contenuBouteilleEnLitres - this.quantiteEnLitres;
+                    this.contenuBouteilleEnLitres = this.contenuBouteilleEnLitres - quantiteEnLitres;
                     return true;
                 }
                 else
