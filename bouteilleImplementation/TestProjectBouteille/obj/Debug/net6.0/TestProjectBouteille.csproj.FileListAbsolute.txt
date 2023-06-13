@@ -1,0 +1,6 @@
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\bin\Debug\net6.0\CoverletSourceRootsMapping_TestProjectBouteille
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\obj\Debug\net6.0\TestProjectBouteille.csproj.AssemblyReference.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\obj\Debug\net6.0\TestProjectBouteille.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\obj\Debug\net6.0\TestProjectBouteille.AssemblyInfoInputs.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\obj\Debug\net6.0\TestProjectBouteille.AssemblyInfo.cs
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\bouteilleImplementation\TestProjectBouteille\obj\Debug\net6.0\TestProjectBouteille.csproj.CoreCompileInputs.cache

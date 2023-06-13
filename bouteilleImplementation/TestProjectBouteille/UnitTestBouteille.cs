@@ -8,51 +8,42 @@ namespace TestProjectBouteille
         [TestMethod]
         public void TestMethod_Bouteille_Instanciation()
         {
-            Bouteille bNom = new Bouteille();
-          
-     
-            Assert.AreEqual(bNom.NomBouteille(), "Pepsi Max", true);
-
-
-
+            Bouteille bTest = new Bouteille();
+      
+            Assert.IsTrue(bTest.NomBouteille == "Pepsi Max");
+            Assert.IsTrue(bTest.MatiereBouteille == "Plastique");
+            Assert.IsTrue(bTest.TypeNomContenuBouteille == "soda");
+            Assert.IsTrue(bTest.ContenanceBouteilleEnLitres == 1.25);
+            Assert.IsTrue(bTest.ContenuBouteilleEnLitres == 0.75);            
         }
-        public void TestMethod_Bouteille_get_matiereBouteille()
-        {
-            Bouteille bMatiere = new Bouteille();
-            string matiereBouteille = bMatiere.GetMatiereBouteille();
-            Assert.IsNotNull(matiereBouteille);
-        }
-        public void TestMethod_Bouteille_get_contenanceBouteilleEnLitres()
-        {
-            Bouteille bContenanceEnLitres = new Bouteille();
-            double contenanceBouteilleEnLitres = bContenanceEnLitres.GetContenanceBouteilleEnLitres();
-            Assert.IsNotNull(contenanceBouteilleEnLitres);
-        }
-        public void TestMethod_Bouteille_get_contenuBouteilleEnLitres()
-        {
-            Bouteille bContenuEnLitres = new Bouteille();
-            double contenuBouteilleEnLitres = bContenuEnLitres.GetContenuBouteilleEnLitres();
-            Assert.IsNotNull(contenuBouteilleEnLitres);
-        }
-        public void TestMethod_Bouteille_get_typeNomContenuBouteille()
-        {
-            Bouteille bNomContenu = new Bouteille();
-            string typeNomContenuBouteille = bNomContenu.GetTypeNomContenuBouteille();
-            Assert.IsNotNull(typeNomContenuBouteille);
-        }
-
+  
         //meme test
 
-        public void TestMethod_Bouteille_Ouvrir_EtatFermee_ReturnTrue()
+        public void TestMethod_Bouteille_Ouvrir_EtatFermee_ReturnFalse()
         {
             Bouteille bFermee = new Bouteille();
-
-            bool f = bFermee.EstFermee;
-
-
-            bool ok = bFermee.OuvrirBouteille();
-            Assert.IsTrue(ok==true);
+            bool fermeeOk = bFermee.OuvrirBouteille();
+            Assert.IsTrue(fermeeOk==true);
+            Assert.IsTrue(bFermee.EstFermee==false);            
+        }
+        public void TestMethod_Bouteille_Ouvrir_EtatOuvert_ReturnTrue()
+        {
+            Bouteille bFermee = new Bouteille();
+            bool fermeeOk = bFermee.FermerBouteille();
+            Assert.IsTrue(fermeeOk==false);
+            Assert.IsTrue(bFermee.EstFermee==true);
+        }
+        public void TestMethod_Bouteille_Fermer_EtatFermee_ReturnTrue()
+        {
+            Bouteille bFermee = new Bouteille();
+            bool fermeeOk = bFermee.FermerBouteille();
+            Assert.IsTrue(fermeeOk);
             Assert.IsTrue(bFermee.EstFermee==false);
         }
+        public void TestMethod_Bouteille_Fermer_EtatOuvert
+        
+
+        
+
     }
 }

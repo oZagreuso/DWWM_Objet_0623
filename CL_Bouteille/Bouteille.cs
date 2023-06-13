@@ -21,13 +21,13 @@ namespace CL_Bouteille
        
 
 
-        public string NomBouteille { get => nomBouteille; set => nomBouteille = value; }
-        public string MatiereBouteille { get => matiereBouteille; set => matiereBouteille = value; }
-        public double ContenanceBouteilleEnLitres { get => contenanceBouteilleEnLitres; set => contenanceBouteilleEnLitres = value; }
-        public double ContenuBouteilleEnLitres { get => contenuBouteilleEnLitres; set => contenuBouteilleEnLitres = value; }
-        public string TypeNomContenuBouteille { get => typeNomContenuBouteille; set => typeNomContenuBouteille = value; }
+        public string NomBouteille { get => nomBouteille; private set => nomBouteille = value; }
+        public string MatiereBouteille { get => matiereBouteille; private set => matiereBouteille = value; }
+        public double ContenanceBouteilleEnLitres { get => contenanceBouteilleEnLitres; private set => contenanceBouteilleEnLitres = value; }
+        public double ContenuBouteilleEnLitres { get => contenuBouteilleEnLitres; private set => contenuBouteilleEnLitres = value; }
+        public string TypeNomContenuBouteille { get => typeNomContenuBouteille; private set => typeNomContenuBouteille = value; }
         public bool EstFermee { get => estFermee; private set => estFermee = value; }
-        
+
 
 
 
@@ -37,7 +37,7 @@ namespace CL_Bouteille
         //Par défaut
 
         public Bouteille()
-            :this("Pepsi Max", "Plastique", 1.25, 0.75, "soda", true)
+            : this("Pepsi Max", "Plastique", 1.25, 0.75, "soda", true)
         {
             /*nomBouteille = " Pepsi Max ";
             matiereBouteille = " Plastique ";
