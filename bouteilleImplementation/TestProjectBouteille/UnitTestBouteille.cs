@@ -8,16 +8,13 @@ namespace TestProjectBouteille
         [TestMethod]
         public void TestMethod_Bouteille_Instanciation()
         {
-            Bouteille bTest = new Bouteille();
-      
+            Bouteille bTest = new Bouteille();      
             Assert.IsTrue(bTest.NomBouteille == "Pepsi Max");
             Assert.IsTrue(bTest.MatiereBouteille == "Plastique");
             Assert.IsTrue(bTest.TypeNomContenuBouteille == "soda");
             Assert.IsTrue(bTest.ContenanceBouteilleEnLitres == 1.25);
             Assert.IsTrue(bTest.ContenuBouteilleEnLitres == 0.75);            
         }
-
-        //meme test
         [TestMethod]
         public void TestMethod_Bouteille_Ouvrir_EtatFermee_ReturnFalse()
         {
@@ -55,10 +52,8 @@ namespace TestProjectBouteille
         {
             Bouteille bFermee = new Bouteille();
             bool fermeeOk = bFermee.RemplirTout();
-        }
-        
-
-        
-
+            Assert.IsTrue(!(fermeeOk));//si la bouteille est ouverte
+            Assert.IsTrue(bFermee.EstFermee == false);
+        }              
     }
 }
