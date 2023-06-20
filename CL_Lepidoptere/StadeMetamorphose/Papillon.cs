@@ -16,7 +16,7 @@ namespace CL_Lepidoptere.StadeMetamorphose
 
         public override Stade SeMetamorphoser()
         {
-            return new Papillon();
+            return this;
         }
     }
 }
