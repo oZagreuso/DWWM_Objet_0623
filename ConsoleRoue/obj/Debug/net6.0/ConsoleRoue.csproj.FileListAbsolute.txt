@@ -1,0 +1,5 @@
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\ConsoleRoue\obj\Debug\net6.0\ConsoleRoue.csproj.AssemblyReference.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\ConsoleRoue\obj\Debug\net6.0\ConsoleRoue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\ConsoleRoue\obj\Debug\net6.0\ConsoleRoue.AssemblyInfoInputs.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\ConsoleRoue\obj\Debug\net6.0\ConsoleRoue.AssemblyInfo.cs
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\ConsoleRoue\obj\Debug\net6.0\ConsoleRoue.csproj.CoreCompileInputs.cache
