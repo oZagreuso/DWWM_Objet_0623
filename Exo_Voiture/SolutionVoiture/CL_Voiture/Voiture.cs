@@ -24,7 +24,6 @@ namespace CL_Voiture
             sesQuatresRoues = new Roue[4] { new Roue(), new Roue(), new Roue(), new Roue() };
             sonMoteur = new Moteur();
         }
-
         //ConstructeurCLassique
         public Voiture(string _marqueVoiture, Roue[] _sesQuatresRoues, Moteur _sonMoteur)
         {
@@ -32,7 +31,6 @@ namespace CL_Voiture
             this.sesQuatresRoues = _sesQuatresRoues;
             this.sonMoteur = _sonMoteur;
         }
-
         //Constructeur par clonage
         public Voiture(Voiture cloneVoiture)
         {
@@ -40,7 +38,6 @@ namespace CL_Voiture
             this.sesQuatresRoues = cloneVoiture.sesQuatresRoues;
             this.sonMoteur = cloneVoiture.sonMoteur;
         }
-
         public bool Demarrer()
         {
             return sonMoteur.DemarrerMoteur();

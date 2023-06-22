@@ -64,7 +64,16 @@ namespace CL_Voiture.ElementsVoiture
             {
                 bool ok1 = roueAvantGauche.TournerRoue();
                 bool ok2 = roueAvantDroite.TournerRoue();
-                return true;
+
+                if (ok1 && ok2)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
             }
             else
             {

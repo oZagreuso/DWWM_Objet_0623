@@ -42,6 +42,10 @@ namespace ConsoleAppVoiture
 
             Voiture voiture1 = new Voiture();
             bool demarrer1 = voiture1.Demarrer();
+            bool eteindre1 = voiture1.Eteindre();
+            bool avancer1 = voiture1.Avancer();
+            bool demarrer2 = voiture1.Demarrer();
+            bool avancer2 = voiture1.Avancer();
 
 
         }
