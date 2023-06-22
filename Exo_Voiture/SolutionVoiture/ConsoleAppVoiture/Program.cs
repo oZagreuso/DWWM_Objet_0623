@@ -1,4 +1,5 @@
 ﻿using CL_Voiture.ElementsVoiture;
+using CL_Voiture;
 
 namespace ConsoleAppVoiture
 {
@@ -38,6 +39,10 @@ namespace ConsoleAppVoiture
             Moteur moteur5 = new Moteur(true);
             bool arreterRoue5 = moteur5.ArreterMoteur();
             bool entrainerRoue5 = moteur5.EntrainerRoue(roue1, roue2);
+
+            Voiture voiture1 = new Voiture();
+            bool demarrer1 = voiture1.Demarrer();
+
 
         }
     }

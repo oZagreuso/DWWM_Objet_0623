@@ -10,55 +10,48 @@ namespace CL_Voiture
     public class Voiture
     {
         //Attribut Variable
-        private string marqueVoiture;
-        private bool estDemarre;
-
+        private string marqueVoiture;      
 
         //Attribut Objet
         private Roue[] sesQuatresRoues;
         private Moteur sonMoteur;
 
-        public string MarqueVoiture { get => marqueVoiture; private set => marqueVoiture = value; }
-        public bool EstDemarre { get => estDemarre; set => estDemarre = value; }
+        //Constructeur par défaut
 
-        //Constructeur
-        public Voiture(string _marqueVoiture, bool _estDemarre)
+        public Voiture()
         {
-            this.marqueVoiture = _marqueVoiture;
-            this.estDemarre = _estDemarre;
+            marqueVoiture = " Tesla ";         
+            sesQuatresRoues = new Roue[4] { new Roue(), new Roue(), new Roue(), new Roue() };
+            sonMoteur = new Moteur();
         }
+
+        //ConstructeurCLassique
+        public Voiture(string _marqueVoiture, Roue[] _sesQuatresRoues, Moteur _sonMoteur)
+        {
+            this.marqueVoiture = _marqueVoiture;            
+            this.sesQuatresRoues = _sesQuatresRoues;
+            this.sonMoteur = _sonMoteur;
+        }
+
+        //Constructeur par clonage
+        public Voiture(Voiture cloneVoiture)
+        {
+            this.marqueVoiture = cloneVoiture.marqueVoiture;           
+            this.sesQuatresRoues = cloneVoiture.sesQuatresRoues;
+            this.sonMoteur = cloneVoiture.sonMoteur;
+        }
+
         public bool Demarrer()
         {
-            if (estDemarre)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return sonMoteur.DemarrerMoteur();
         }
         public bool Eteindre()
         {
-            if (estDemarre)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return sonMoteur.ArreterMoteur();
         }
         public bool Avancer()
         {
-            if (estDemarre)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return sonMoteur.EntrainerRoue(sesQuatresRoues[0], sesQuatresRoues[1]);
         }
     }
 }
