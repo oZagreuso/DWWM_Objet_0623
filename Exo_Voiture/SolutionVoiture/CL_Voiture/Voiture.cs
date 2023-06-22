@@ -16,6 +16,12 @@ namespace CL_Voiture
         private Roue[] sesQuatresRoues;
         private Moteur sonMoteur;
 
+        //getter setter
+
+        public string MarqueVoiture { get => marqueVoiture; private set => marqueVoiture = value; }
+        public Roue[] SesQuatresRoues { get => sesQuatresRoues; private set => sesQuatresRoues = value; }
+        public Moteur SonMoteur { get => sonMoteur; private set => sonMoteur = value; }
+
         //Constructeur par défaut
 
         public Voiture()

@@ -15,4 +15,8 @@
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CL_Voiture\CL_Voiture.csproj" />
+  </ItemGroup>
+
 </Project>
