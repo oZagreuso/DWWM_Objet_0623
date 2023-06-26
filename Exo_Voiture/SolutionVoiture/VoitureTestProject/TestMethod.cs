@@ -15,10 +15,22 @@ namespace VoitureTestProject
             Assert.IsTrue(vTest.SonMoteur == new Moteur());
         }
         [TestMethod]
-        public void TestMethod_Moteur_DemarrerMoteur_EstOn_Return_False()
+        public void TestMethod_Voiture_Demarrer_Return_True()
         {
-            Voiture vTestMoteurDemarrage = new Voiture();
-            Assert.IsTrue(vTestMoteurDemarrage.Demarrer = true);
+            Voiture vTestVoitureDemarrage = new Voiture();
+            Assert.IsTrue(vTestVoitureDemarrage.Demarrer());
+        }
+        [TestMethod]
+        public void TestMethod_Voiture_Eteindre_Return_True()
+        {
+            Voiture vTestVoitureEteindre = new Voiture();
+            Assert.IsTrue(vTestVoitureEteindre.Eteindre());
+        }
+        [TestMethod]
+        public void TestMethod_Voiture_Avancer_Return_True()
+        {
+            Voiture vTestVoitureAvancer = new Voiture();
+            Assert.IsTrue(vTestVoitureAvancer.Avancer());
         }
     }
 }
