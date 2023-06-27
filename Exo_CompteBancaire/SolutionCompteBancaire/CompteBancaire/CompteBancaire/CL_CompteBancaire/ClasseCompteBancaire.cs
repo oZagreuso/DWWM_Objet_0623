@@ -46,9 +46,10 @@
 
         public void CrediterCompte(double saisieMontant)
         {
-           if ()
+            this.soldeCompte = soldeCompte + saisieMontant;
+            //Console.WriteLine(" Le solde du compte est de " + soldeCompte);
         }
-     
+
         public bool DebiterOK(double saisieMontant)
         {
             bool debiterOk = true;
@@ -56,27 +57,51 @@
             {
                 debiterOk = false;
             }
-            else if (soldeCompte - saisieMontant > soldeMinimum)
+            else //if (soldeCompte - saisieMontant > soldeMinimum)
             {
                 debiterOk = true;
-                
+
             }
             return debiterOk;
         }
 
-        public double DebiterCompte(double saisieMontant)
+        public bool DebiterCompte(double saisieMontant)
         {
-            do (double TransfererMontant(double saisie Montant))
-                { 
+            bool okDebiter = false;
             if (DebiterOK(saisieMontant))
             {
-                bool transfererMontant = true;
-                double nouveauSolde = soldeCompte + saisieMontant;
-                nouveauSolde = soldeCompte;               
+                soldeCompte = soldeCompte - saisieMontant;
+                okDebiter = true;
+                //Console.WriteLine(" Le solde du compte est de " + soldeCompte);
             }
             else
             {
-               
+                okDebiter = false;
+            }
+            return okDebiter;
+        }
+
+        public bool TransfererMontant(double saisieMontant, CompteBancaire compteDestinataire)
+        {
+            if (DebiterOK(saisieMontant))
+            {
+                compteDestinataire.CrediterCompte(saisieMontant);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool SoldeSuperieur(CompteBancaire compte2)
+        {
+            if (this.soldeCompte > compte2.soldeCompte)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

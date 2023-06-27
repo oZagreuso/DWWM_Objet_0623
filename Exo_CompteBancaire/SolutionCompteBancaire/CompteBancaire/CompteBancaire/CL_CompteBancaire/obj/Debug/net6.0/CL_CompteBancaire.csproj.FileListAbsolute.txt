@@ -1,0 +1,12 @@
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\bin\Debug\net6.0\CL_CompteBancaire.deps.json
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\bin\Debug\net6.0\CL_CompteBancaire.dll
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\bin\Debug\net6.0\CL_CompteBancaire.pdb
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.csproj.AssemblyReference.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.AssemblyInfoInputs.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.AssemblyInfo.cs
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.csproj.CoreCompileInputs.cache
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.dll
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\refint\CL_CompteBancaire.dll
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\CL_CompteBancaire.pdb
+C:\Users\Odalferro\Documents\DWWM_Objet_0623\Exo_CompteBancaire\SolutionCompteBancaire\CompteBancaire\CompteBancaire\CL_CompteBancaire\obj\Debug\net6.0\ref\CL_CompteBancaire.dll
