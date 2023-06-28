@@ -5,21 +5,24 @@
         //Attributs
 
         private int numerateur;
-        private int denominateur;
-        private int pgcd;
+        private int denominateur;       
 
         //Getter Setter
 
         public int Numerateur { get => numerateur; private set => numerateur = value; }
-        public int Denominateur { get => denominateur; private set => denominateur = value; }      
-        public int Pgcd { get => pgcd; private set => pgcd = value; }
+        public int Denominateur { get => denominateur; private set => denominateur = value; }           
 
-        // Constructeur Classique
+        // Constructeurs Classiques
 
         public Fraction(int _numerateur, int _denominateur)
         {
             this.numerateur = _numerateur;
             this.denominateur = _denominateur;            
+        }
+
+        public Fraction(int _numerateur)
+        {
+            Numerateur = _numerateur;
         }
 
         // Constructeur par Clonage
@@ -34,7 +37,8 @@
 
         public void Oppose()
         {
-             new Fraction(numerateur * -1, denominateur * -1);
+            numerateur = numerateur * -1;
+            denominateur = denominateur * -1;
         }
 
         public void Inverse()
@@ -44,5 +48,16 @@
             numerateur = denominateur;
             denominateur = temp;
         }
+
+        public void Plus(Fraction _autreFraction)
+        {
+            numerateur = (this.numerateur * _autreFraction.denominateur) + (this.denominateur * _autreFraction.numerateur);
+            denominateur = (this.denominateur * _autreFraction.denominateur);            
+        }
+            /*public static int Pgcd(int denominteur, int denominateur)
+            {
+               
+            }*/
+        
     }
 }
