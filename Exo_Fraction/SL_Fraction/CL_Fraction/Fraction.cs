@@ -34,7 +34,15 @@
 
         public void Oppose()
         {
-            return 
+             new Fraction(numerateur * -1, denominateur * -1);
+        }
+
+        public void Inverse()
+        {
+            int temp;
+            temp = numerateur;
+            numerateur = denominateur;
+            denominateur = temp;
         }
     }
 }
