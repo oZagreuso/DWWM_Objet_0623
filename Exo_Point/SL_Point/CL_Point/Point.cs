@@ -24,7 +24,7 @@
         //Constructeur par défaut
 
         public Point()
-            : this(0.0,0.0)
+            : this(0.0, 0.0)
         {
 
         }
@@ -32,7 +32,7 @@
         //Constructeur par clonage
 
         public Point(Point clonePoint)
-            : this(clonePoint.positionActuelleX,clonePoint.positionActuelleY)
+            : this(clonePoint.positionActuelleX, clonePoint.positionActuelleY)
         {
 
         }
@@ -43,7 +43,7 @@
         {
             this.positionActuelleX = newX;
             this.positionActuelleY = newY;
-            Console.WriteLine(" Position point " + newX + newY);
+
         }
 
         public void PermuterDeuxPoints()
@@ -52,25 +52,29 @@
             temp = positionActuelleX;
             positionActuelleX = positionActuelleY;
             positionActuelleY = temp;
-            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
-        }   
-        public void creerPointSymetriqueAxeAbscisse()
-        {
-            this.positionActuelleY -= 2 * positionActuelleY;
-            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+
         }
 
-        public void creerPointSymetriqueAxeOrdonnee()
+        public Point CreerPointSymetriqueAxeAbscisse()
         {
-            this.positionActuelleX -= 2 * positionActuelleX;
-            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+            return new Point(positionActuelleX, positionActuelleY * -1);
         }
 
-        public void creerPointSymetriqueOrigine()
+        public Point CreerPointSymetriqueAxeOrdonne()
         {
-            this.positionActuelleY -= 2 * positionActuelleY;
-            this.positionActuelleX -= 2 * positionActuelleX;
-            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+
+            return new Point(positionActuelleX * -1, positionActuelleY);
+
+        }
+
+        public Point creerPointSymetriqueOrigine()
+        {
+            return new Point(positionActuelleX * -1, positionActuelleY * -1);
+        }
+
+        public string StatutPosition()
+        {
+            return (" Position de X " + positionActuelleX + " Position de y " + positionActuelleY);
         }
     }
 }
