@@ -43,6 +43,7 @@
         {
             this.positionActuelleX = newX;
             this.positionActuelleY = newY;
+            Console.WriteLine(" Position point " + newX + newY);
         }
 
         public void PermuterDeuxPoints()
@@ -50,12 +51,26 @@
             double temp;
             temp = positionActuelleX;
             positionActuelleX = positionActuelleY;
-            positionActuelleY = temp;            
+            positionActuelleY = temp;
+            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+        }   
+        public void creerPointSymetriqueAxeAbscisse()
+        {
+            this.positionActuelleY -= 2 * positionActuelleY;
+            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
         }
 
-        public string StatutPosition(Point.positionActuelleX, Point.positionY)
+        public void creerPointSymetriqueAxeOrdonnee()
         {
-            Console.WriteLine(" Le point est à la position " + this.positionActuelleX + this.positionActuelleY);
-        }       
+            this.positionActuelleX -= 2 * positionActuelleX;
+            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+        }
+
+        public void creerPointSymetriqueOrigine()
+        {
+            this.positionActuelleY -= 2 * positionActuelleY;
+            this.positionActuelleX -= 2 * positionActuelleX;
+            Console.WriteLine(" Position point " + positionActuelleX + positionActuelleY);
+        }
     }
 }
