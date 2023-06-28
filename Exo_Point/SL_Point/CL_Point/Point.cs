@@ -62,9 +62,7 @@
 
         public Point CreerPointSymetriqueAxeOrdonne()
         {
-
             return new Point(positionActuelleX * -1, positionActuelleY);
-
         }
 
         public Point creerPointSymetriqueOrigine()
